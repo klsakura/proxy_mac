@@ -20,4 +20,12 @@ final class RuleSortingTests: XCTestCase {
         let sorted = RuleSorting.manualSort([a, b])
         XCTAssertEqual(sorted.first?.host, "b.dev.test")
     }
+
+    func testReassignOrderPreservesListOrder() {
+        let a = Rule(host: "a.dev.test", pathPrefix: "/", upstream: "https://a", order: 10)
+        let b = Rule(host: "b.dev.test", pathPrefix: "/", upstream: "https://b", order: 20)
+        let updated = RuleSorting.reassignOrder([b, a])
+        XCTAssertEqual(updated[0].order, 0)
+        XCTAssertEqual(updated[1].order, 1)
+    }
 }

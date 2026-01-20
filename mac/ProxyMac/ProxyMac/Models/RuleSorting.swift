@@ -16,6 +16,13 @@ enum RuleSorting {
         rules.sorted { $0.order < $1.order }
     }
 
+    static func reassignOrder(_ rules: [Rule]) -> [Rule] {
+        for (index, rule) in rules.enumerated() {
+            rule.order = index
+        }
+        return rules
+    }
+
     private static func hostSpecificity(_ host: String) -> Int {
         host.hasPrefix("*.") ? 0 : 1
     }
