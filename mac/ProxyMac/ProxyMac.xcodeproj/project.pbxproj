@@ -12,9 +12,12 @@
 		35B31244B398FBD6B2F3DE78 /* RuleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C48B44F1E00DC88415FC20 /* RuleStore.swift */; };
 		5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA18D14D044E5FD590393554 /* ProxyMacTests.swift */; };
 		667390C0286B25C8ABB1DC48 /* ProxyMacExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F737709EB91262B6E7C28 /* MainWindow.swift */; };
 		DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */; };
+		EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */; };
 		EE8D53567E9BEDDFDEE0B1F3 /* TransparentProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883E9807FF33955A53AA91C /* TransparentProxyProvider.swift */; };
 		EEAFE1A13B6D2BB010DDE7D6 /* HelperMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6B4BB80293CCFF380E38C /* HelperMain.swift */; };
+		F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4C82F408C928D0AF160D8 /* MenuBar.swift */; };
 		FDFF78DBC84E226804E5FE1A /* ImportExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +57,9 @@
 		0BCEDFBA4345DC297034F353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		19C48B44F1E00DC88415FC20 /* RuleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStore.swift; sourceTree = "<group>"; };
 		1ACA01C0986CB84C63405D0B /* ProxyMacExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMacExtension.entitlements; sourceTree = "<group>"; };
+		25E4C82F408C928D0AF160D8 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		34DE37B1AC77FACA960E5B4E /* ProxyMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMac.entitlements; sourceTree = "<group>"; };
+		6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTests.swift; sourceTree = "<group>"; };
 		72F63F790DB9627AEA8B13E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExport.swift; sourceTree = "<group>"; };
 		8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportTests.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyMacApp.swift; sourceTree = "<group>"; };
 		B3D6817DEDB92F527D802555 /* ProxyMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxyMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA2393E6614FCCBC0AFCB10 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		E52F737709EB91262B6E7C28 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		EA18D14D044E5FD590393554 /* ProxyMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyMacTests.swift; sourceTree = "<group>"; };
 		EAB6B4BB80293CCFF380E38C /* HelperMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMain.swift; sourceTree = "<group>"; };
 		F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ProxyMacExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */,
+				6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */,
 				EA18D14D044E5FD590393554 /* ProxyMacTests.swift */,
 			);
 			path = ProxyMacTests;
@@ -135,6 +142,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E062769CC723C0A4DE09680E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E52F737709EB91262B6E7C28 /* MainWindow.swift */,
+				25E4C82F408C928D0AF160D8 /* MenuBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F1C1C0DB899E3B382C25B910 /* ProxyMac */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +159,7 @@
 				A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */,
 				D19B4919C213289202B05BC4 /* Models */,
 				9197F4126771A9853A365E96 /* Services */,
+				E062769CC723C0A4DE09680E /* Views */,
 			);
 			path = ProxyMac;
 			sourceTree = "<group>";
@@ -284,6 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */,
+				9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */,
+				F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */,
 				2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */,
 				110D16FB50E7A1123935F780 /* Rule.swift in Sources */,
 				35B31244B398FBD6B2F3DE78 /* RuleStore.swift in Sources */,
@@ -303,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDFF78DBC84E226804E5FE1A /* ImportExportTests.swift in Sources */,
+				EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */,
 				5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
