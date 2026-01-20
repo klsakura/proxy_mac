@@ -6,7 +6,7 @@ Date: 2026-01-20
 Build a macOS native app to proxy local development traffic without Docker/Nginx. The app provides a UI to configure domain/path routing rules, and a system-level proxy that captures GUI and CLI traffic for local dev domains.
 
 ## Key Decisions
-- Platform: macOS 12.3+.
+- Platform: macOS 14+.
 - Architecture: Swift UI app + Go proxy core + Network Extension (transparent proxy) + privileged helper.
 - DNS: local resolver for `*.dev.test` via `/etc/resolver` + local DNS server.
 - TLS: MITM with auto-generated root CA; guide user to trust in Keychain.

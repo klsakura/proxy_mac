@@ -3,7 +3,7 @@ options:
   bundleIdPrefix: com.klsakura
 settings:
   base:
-    MACOSX_DEPLOYMENT_TARGET: "12.3"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
     SWIFT_VERSION: "5.9"
     DEVELOPMENT_TEAM: ""
     CODE_SIGN_STYLE: "Automatic"
