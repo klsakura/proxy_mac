@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4824A6323F9AF0F74ACE6C /* RuleSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF648DB2CB99422A4EA735 /* RuleSorting.swift */; };
 		110D16FB50E7A1123935F780 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA2393E6614FCCBC0AFCB10 /* Rule.swift */; };
 		2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */; };
 		35B31244B398FBD6B2F3DE78 /* RuleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C48B44F1E00DC88415FC20 /* RuleStore.swift */; };
 		392D725FBA924705715D946F /* ControlClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38977FC4BFD41356E4C3BF46 /* ControlClient.swift */; };
+		56CB0547E802AA86990DB219 /* RuleSortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */; };
 		5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA18D14D044E5FD590393554 /* ProxyMacTests.swift */; };
 		9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F737709EB91262B6E7C28 /* MainWindow.swift */; };
 		DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */; };
@@ -37,8 +39,10 @@
 		19C48B44F1E00DC88415FC20 /* RuleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStore.swift; sourceTree = "<group>"; };
 		1ACA01C0986CB84C63405D0B /* ProxyMacExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMacExtension.entitlements; sourceTree = "<group>"; };
 		25E4C82F408C928D0AF160D8 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		26CF648DB2CB99422A4EA735 /* RuleSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSorting.swift; sourceTree = "<group>"; };
 		34DE37B1AC77FACA960E5B4E /* ProxyMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMac.entitlements; sourceTree = "<group>"; };
 		38977FC4BFD41356E4C3BF46 /* ControlClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlClient.swift; sourceTree = "<group>"; };
+		4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSortingTests.swift; sourceTree = "<group>"; };
 		6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTests.swift; sourceTree = "<group>"; };
 		72F63F790DB9627AEA8B13E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExport.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */,
 				6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */,
 				EA18D14D044E5FD590393554 /* ProxyMacTests.swift */,
+				4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */,
 			);
 			path = ProxyMacTests;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BBA2393E6614FCCBC0AFCB10 /* Rule.swift */,
+				26CF648DB2CB99422A4EA735 /* RuleSorting.swift */,
 				19C48B44F1E00DC88415FC20 /* RuleStore.swift */,
 			);
 			path = Models;
@@ -285,6 +291,7 @@
 				F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */,
 				2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */,
 				110D16FB50E7A1123935F780 /* Rule.swift in Sources */,
+				0F4824A6323F9AF0F74ACE6C /* RuleSorting.swift in Sources */,
 				35B31244B398FBD6B2F3DE78 /* RuleStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +311,7 @@
 				FDFF78DBC84E226804E5FE1A /* ImportExportTests.swift in Sources */,
 				EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */,
 				5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */,
+				56CB0547E802AA86990DB219 /* RuleSortingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
