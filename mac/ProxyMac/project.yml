@@ -13,6 +13,10 @@ schemes:
     build:
       targets:
         ProxyMac: all
+        ProxyMacTests: test
+    test:
+      targets:
+        - ProxyMacTests
 
 targets:
   ProxyMac:
