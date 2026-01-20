@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */; };
+		5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA18D14D044E5FD590393554 /* ProxyMacTests.swift */; };
+		667390C0286B25C8ABB1DC48 /* ProxyMacExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE8D53567E9BEDDFDEE0B1F3 /* TransparentProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883E9807FF33955A53AA91C /* TransparentProxyProvider.swift */; };
+		EEAFE1A13B6D2BB010DDE7D6 /* HelperMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6B4BB80293CCFF380E38C /* HelperMain.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30356167DC945D706A1462D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61293937E80773A8A5FEF4A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA1D7E2F5C619B61CE53BA6;
+			remoteInfo = ProxyMac;
+		};
+		FE4F27336E233232285599CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61293937E80773A8A5FEF4A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D7A6DBDD2ACD14FF4A889E;
+			remoteInfo = ProxyMacExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A43A90ECF52D049D32B05E9D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				667390C0286B25C8ABB1DC48 /* ProxyMacExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B6B994A904550B55DA2779B /* ProxyMacHelper */ = {isa = PBXFileReference; includeInIndex = 0; path = ProxyMacHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BCEDFBA4345DC297034F353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1ACA01C0986CB84C63405D0B /* ProxyMacExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMacExtension.entitlements; sourceTree = "<group>"; };
+		34DE37B1AC77FACA960E5B4E /* ProxyMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMac.entitlements; sourceTree = "<group>"; };
+		72F63F790DB9627AEA8B13E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F8184C19A06D94F005E2604 /* ProxyMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyMacApp.swift; sourceTree = "<group>"; };
+		B3D6817DEDB92F527D802555 /* ProxyMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxyMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA18D14D044E5FD590393554 /* ProxyMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyMacTests.swift; sourceTree = "<group>"; };
+		EAB6B4BB80293CCFF380E38C /* HelperMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMain.swift; sourceTree = "<group>"; };
+		F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ProxyMacExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F883E9807FF33955A53AA91C /* TransparentProxyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentProxyProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0EBFC3B76B35A2E59D003C23 /* ProxyMacHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6B4BB80293CCFF380E38C /* HelperMain.swift */,
+			);
+			path = ProxyMacHelper;
+			sourceTree = "<group>";
+		};
+		577FD59230A7A4EBB3B440BE /* ProxyMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA18D14D044E5FD590393554 /* ProxyMacTests.swift */,
+			);
+			path = ProxyMacTests;
+			sourceTree = "<group>";
+		};
+		70638124EEE0DD845221E5C2 = {
+			isa = PBXGroup;
+			children = (
+				F1C1C0DB899E3B382C25B910 /* ProxyMac */,
+				7899F1EC66781CF74205C9AB /* ProxyMacExtension */,
+				0EBFC3B76B35A2E59D003C23 /* ProxyMacHelper */,
+				577FD59230A7A4EBB3B440BE /* ProxyMacTests */,
+				77894A51A1FEC53F83F71383 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77894A51A1FEC53F83F71383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3D6817DEDB92F527D802555 /* ProxyMac.app */,
+				F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */,
+				0B6B994A904550B55DA2779B /* ProxyMacHelper */,
+				9F8184C19A06D94F005E2604 /* ProxyMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7899F1EC66781CF74205C9AB /* ProxyMacExtension */ = {
+			isa = PBXGroup;
+			children = (
+				72F63F790DB9627AEA8B13E9 /* Info.plist */,
+				1ACA01C0986CB84C63405D0B /* ProxyMacExtension.entitlements */,
+				F883E9807FF33955A53AA91C /* TransparentProxyProvider.swift */,
+			);
+			path = ProxyMacExtension;
+			sourceTree = "<group>";
+		};
+		F1C1C0DB899E3B382C25B910 /* ProxyMac */ = {
+			isa = PBXGroup;
+			children = (
+				0BCEDFBA4345DC297034F353 /* Info.plist */,
+				34DE37B1AC77FACA960E5B4E /* ProxyMac.entitlements */,
+				A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */,
+			);
+			path = ProxyMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45756D2D778B7647363246DC /* ProxyMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48A286C06CEF212BAEE3C5E /* Build configuration list for PBXNativeTarget "ProxyMacTests" */;
+			buildPhases = (
+				E27B3BA04B6AF409DC4DA610 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9779E2F060C323390F3ED56 /* PBXTargetDependency */,
+			);
+			name = ProxyMacTests;
+			packageProductDependencies = (
+			);
+			productName = ProxyMacTests;
+			productReference = 9F8184C19A06D94F005E2604 /* ProxyMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48D0037B19C58EDEADC8807F /* ProxyMacHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E3AB255AE195F511FC6131 /* Build configuration list for PBXNativeTarget "ProxyMacHelper" */;
+			buildPhases = (
+				C16B505D555892DAA251CDCA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProxyMacHelper;
+			packageProductDependencies = (
+			);
+			productName = ProxyMacHelper;
+			productReference = 0B6B994A904550B55DA2779B /* ProxyMacHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		B6D7A6DBDD2ACD14FF4A889E /* ProxyMacExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332A7DC85FBF749B75D8AC86 /* Build configuration list for PBXNativeTarget "ProxyMacExtension" */;
+			buildPhases = (
+				4F9AFA31CBBF9BCB71AB532C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProxyMacExtension;
+			packageProductDependencies = (
+			);
+			productName = ProxyMacExtension;
+			productReference = F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DBA1D7E2F5C619B61CE53BA6 /* ProxyMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E3DA1EE3C31B601ED4A31EB /* Build configuration list for PBXNativeTarget "ProxyMac" */;
+			buildPhases = (
+				BA2B45A223C16ECE46DBBF70 /* Sources */,
+				A43A90ECF52D049D32B05E9D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA9791E1A3BFD0826285269 /* PBXTargetDependency */,
+			);
+			name = ProxyMac;
+			packageProductDependencies = (
+			);
+			productName = ProxyMac;
+			productReference = B3D6817DEDB92F527D802555 /* ProxyMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61293937E80773A8A5FEF4A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					45756D2D778B7647363246DC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					48D0037B19C58EDEADC8807F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B6D7A6DBDD2ACD14FF4A889E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					DBA1D7E2F5C619B61CE53BA6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B87E86502132B68333E1D0AE /* Build configuration list for PBXProject "ProxyMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 70638124EEE0DD845221E5C2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA1D7E2F5C619B61CE53BA6 /* ProxyMac */,
+				B6D7A6DBDD2ACD14FF4A889E /* ProxyMacExtension */,
+				48D0037B19C58EDEADC8807F /* ProxyMacHelper */,
+				45756D2D778B7647363246DC /* ProxyMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F9AFA31CBBF9BCB71AB532C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8D53567E9BEDDFDEE0B1F3 /* TransparentProxyProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2B45A223C16ECE46DBBF70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16B505D555892DAA251CDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAFE1A13B6D2BB010DDE7D6 /* HelperMain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27B3BA04B6AF409DC4DA610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA9791E1A3BFD0826285269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D7A6DBDD2ACD14FF4A889E /* ProxyMacExtension */;
+			targetProxy = FE4F27336E233232285599CE /* PBXContainerItemProxy */;
+		};
+		C9779E2F060C323390F3ED56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA1D7E2F5C619B61CE53BA6 /* ProxyMac */;
+			targetProxy = 30356167DC945D706A1462D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A2F649DD350E7D39129C773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProxyMac/ProxyMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ProxyMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		462EFCDA0DABF5CF24709295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMac.Helper;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		520D24C5E3E0166DAC21924A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		601436CD00DE5FB6D45CF13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		8E3370EABB92C8876DED0223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMac.Helper;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A68307A6AE28B4F39CE99D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMacTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProxyMac.app/Contents/MacOS/ProxyMac";
+			};
+			name = Debug;
+		};
+		B72C2A70C8EA4E17FACC93C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProxyMac/ProxyMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ProxyMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0117DD240092C3439512008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMacTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProxyMac.app/Contents/MacOS/ProxyMac";
+			};
+			name = Release;
+		};
+		D4EC6DC7413E91E5E48BBA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ProxyMacExtension/ProxyMacExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ProxyMacExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMac.Extension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E3BF849A6BF405CFB5155DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ProxyMacExtension/ProxyMacExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ProxyMacExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.klsakura.ProxyMac.Extension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332A7DC85FBF749B75D8AC86 /* Build configuration list for PBXNativeTarget "ProxyMacExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EC6DC7413E91E5E48BBA71 /* Debug */,
+				E3BF849A6BF405CFB5155DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61E3AB255AE195F511FC6131 /* Build configuration list for PBXNativeTarget "ProxyMacHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3370EABB92C8876DED0223 /* Debug */,
+				462EFCDA0DABF5CF24709295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E3DA1EE3C31B601ED4A31EB /* Build configuration list for PBXNativeTarget "ProxyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A2F649DD350E7D39129C773 /* Debug */,
+				B72C2A70C8EA4E17FACC93C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B87E86502132B68333E1D0AE /* Build configuration list for PBXProject "ProxyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520D24C5E3E0166DAC21924A /* Debug */,
+				601436CD00DE5FB6D45CF13C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D48A286C06CEF212BAEE3C5E /* Build configuration list for PBXNativeTarget "ProxyMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68307A6AE28B4F39CE99D17 /* Debug */,
+				D0117DD240092C3439512008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61293937E80773A8A5FEF4A2 /* Project object */;
+}

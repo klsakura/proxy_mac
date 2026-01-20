@@ -1,0 +1,59 @@
+name: ProxyMac
+options:
+  bundleIdPrefix: com.klsakura
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "12.3"
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: "Automatic"
+
+schemes:
+  ProxyMac:
+    build:
+      targets:
+        ProxyMac: all
+
+targets:
+  ProxyMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: ProxyMac
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.klsakura.ProxyMac
+        INFOPLIST_FILE: ProxyMac/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ProxyMac/ProxyMac.entitlements
+    dependencies:
+      - target: ProxyMacExtension
+        embed: true
+
+  ProxyMacExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: ProxyMacExtension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.klsakura.ProxyMac.Extension
+        INFOPLIST_FILE: ProxyMacExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ProxyMacExtension/ProxyMacExtension.entitlements
+        SKIP_INSTALL: YES
+
+  ProxyMacHelper:
+    type: tool
+    platform: macOS
+    sources:
+      - path: ProxyMacHelper
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.klsakura.ProxyMac.Helper
+
+  ProxyMacTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: ProxyMacTests
+    dependencies:
+      - target: ProxyMac
