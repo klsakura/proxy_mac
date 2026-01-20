@@ -14,6 +14,10 @@
 		392D725FBA924705715D946F /* ControlClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38977FC4BFD41356E4C3BF46 /* ControlClient.swift */; };
 		56CB0547E802AA86990DB219 /* RuleSortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */; };
 		5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA18D14D044E5FD590393554 /* ProxyMacTests.swift */; };
+		78D5C7F3EA0509E7751081C1 /* RuleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A84AA6A0988D6F4BDCD57 /* RuleDetailView.swift */; };
+		8023C7F362A75B0BBCAD9E3D /* RulesSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40812292AF07A750247644F4 /* RulesSplitView.swift */; };
+		86A48C44FD089BFC1852F4AF /* RulesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815FEB9A5196F5B426A02631 /* RulesViewTests.swift */; };
+		92AC99F8DEA266CE85F0DCB6 /* RuleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063B3584FD7F6AF2CF5F1E4F /* RuleRowView.swift */; };
 		9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F737709EB91262B6E7C28 /* MainWindow.swift */; };
 		DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */; };
 		EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */; };
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063B3584FD7F6AF2CF5F1E4F /* RuleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleRowView.swift; sourceTree = "<group>"; };
 		0B6B994A904550B55DA2779B /* ProxyMacHelper */ = {isa = PBXFileReference; includeInIndex = 0; path = ProxyMacHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BCEDFBA4345DC297034F353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		19C48B44F1E00DC88415FC20 /* RuleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStore.swift; sourceTree = "<group>"; };
@@ -42,11 +47,14 @@
 		26CF648DB2CB99422A4EA735 /* RuleSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSorting.swift; sourceTree = "<group>"; };
 		34DE37B1AC77FACA960E5B4E /* ProxyMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMac.entitlements; sourceTree = "<group>"; };
 		38977FC4BFD41356E4C3BF46 /* ControlClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlClient.swift; sourceTree = "<group>"; };
+		40812292AF07A750247644F4 /* RulesSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesSplitView.swift; sourceTree = "<group>"; };
 		4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSortingTests.swift; sourceTree = "<group>"; };
 		6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTests.swift; sourceTree = "<group>"; };
 		72F63F790DB9627AEA8B13E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExport.swift; sourceTree = "<group>"; };
+		815FEB9A5196F5B426A02631 /* RulesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewTests.swift; sourceTree = "<group>"; };
 		8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportTests.swift; sourceTree = "<group>"; };
+		9D1A84AA6A0988D6F4BDCD57 /* RuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDetailView.swift; sourceTree = "<group>"; };
 		9F8184C19A06D94F005E2604 /* ProxyMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62B232584BF04F4ACF3829A /* ProxyMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyMacApp.swift; sourceTree = "<group>"; };
 		B3D6817DEDB92F527D802555 /* ProxyMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxyMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +82,7 @@
 				6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */,
 				EA18D14D044E5FD590393554 /* ProxyMacTests.swift */,
 				4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */,
+				815FEB9A5196F5B426A02631 /* RulesViewTests.swift */,
 			);
 			path = ProxyMacTests;
 			sourceTree = "<group>";
@@ -134,6 +143,9 @@
 			children = (
 				E52F737709EB91262B6E7C28 /* MainWindow.swift */,
 				25E4C82F408C928D0AF160D8 /* MenuBar.swift */,
+				9D1A84AA6A0988D6F4BDCD57 /* RuleDetailView.swift */,
+				063B3584FD7F6AF2CF5F1E4F /* RuleRowView.swift */,
+				40812292AF07A750247644F4 /* RulesSplitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,8 +303,11 @@
 				F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */,
 				2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */,
 				110D16FB50E7A1123935F780 /* Rule.swift in Sources */,
+				78D5C7F3EA0509E7751081C1 /* RuleDetailView.swift in Sources */,
+				92AC99F8DEA266CE85F0DCB6 /* RuleRowView.swift in Sources */,
 				0F4824A6323F9AF0F74ACE6C /* RuleSorting.swift in Sources */,
 				35B31244B398FBD6B2F3DE78 /* RuleStore.swift in Sources */,
+				8023C7F362A75B0BBCAD9E3D /* RulesSplitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +327,7 @@
 				EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */,
 				5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */,
 				56CB0547E802AA86990DB219 /* RuleSortingTests.swift in Sources */,
+				86A48C44FD089BFC1852F4AF /* RulesViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
