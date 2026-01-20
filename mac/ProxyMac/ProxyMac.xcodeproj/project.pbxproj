@@ -24,6 +24,7 @@
 		EE8D53567E9BEDDFDEE0B1F3 /* TransparentProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883E9807FF33955A53AA91C /* TransparentProxyProvider.swift */; };
 		EEAFE1A13B6D2BB010DDE7D6 /* HelperMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6B4BB80293CCFF380E38C /* HelperMain.swift */; };
 		F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4C82F408C928D0AF160D8 /* MenuBar.swift */; };
+		FD822C6446565E6A5C9DE994 /* JSONFileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364022AA7CA2B765CB6DD3A9 /* JSONFileDocument.swift */; };
 		FDFF78DBC84E226804E5FE1A /* ImportExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		25E4C82F408C928D0AF160D8 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		26CF648DB2CB99422A4EA735 /* RuleSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSorting.swift; sourceTree = "<group>"; };
 		34DE37B1AC77FACA960E5B4E /* ProxyMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxyMac.entitlements; sourceTree = "<group>"; };
+		364022AA7CA2B765CB6DD3A9 /* JSONFileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDocument.swift; sourceTree = "<group>"; };
 		38977FC4BFD41356E4C3BF46 /* ControlClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlClient.swift; sourceTree = "<group>"; };
 		40812292AF07A750247644F4 /* RulesSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesSplitView.swift; sourceTree = "<group>"; };
 		4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSortingTests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				38977FC4BFD41356E4C3BF46 /* ControlClient.swift */,
 				7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */,
+				364022AA7CA2B765CB6DD3A9 /* JSONFileDocument.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				392D725FBA924705715D946F /* ControlClient.swift in Sources */,
 				DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */,
+				FD822C6446565E6A5C9DE994 /* JSONFileDocument.swift in Sources */,
 				9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */,
 				F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */,
 				2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */,
