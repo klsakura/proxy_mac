@@ -7,9 +7,9 @@ final class Rule: Codable {
     var host: String
     var pathPrefix: String
     var upstream: String
-    var enabled: Bool
+    var enabled: Bool = true
     var note: String?
-    var order: Int
+    var order: Int = 0
 
     init(
         host: String,

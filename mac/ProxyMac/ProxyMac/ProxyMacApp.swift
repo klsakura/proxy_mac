@@ -1,14 +1,21 @@
 import AppKit
+import SwiftData
 import SwiftUI
 
 @main
 struct ProxyMacApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    private let modelContainer: ModelContainer = {
+        let isTesting = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+        let configuration = ModelConfiguration(isStoredInMemoryOnly: isTesting)
+        return try! ModelContainer(for: Rule.self, configurations: configuration)
+    }()
 
     var body: some Scene {
         WindowGroup {
             MainWindow()
         }
+        .modelContainer(modelContainer)
 
         if #available(macOS 13.0, *) {
             MenuBarExtra("ProxyMac") {
