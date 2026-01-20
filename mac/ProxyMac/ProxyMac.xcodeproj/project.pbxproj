@@ -12,7 +12,6 @@
 		35B31244B398FBD6B2F3DE78 /* RuleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C48B44F1E00DC88415FC20 /* RuleStore.swift */; };
 		392D725FBA924705715D946F /* ControlClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38977FC4BFD41356E4C3BF46 /* ControlClient.swift */; };
 		5A24735045E70E0BAFB8E3C5 /* ProxyMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA18D14D044E5FD590393554 /* ProxyMacTests.swift */; };
-		667390C0286B25C8ABB1DC48 /* ProxyMacExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7E1D4FA89929E76869542C1 /* ProxyMacExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F737709EB91262B6E7C28 /* MainWindow.swift */; };
 		DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */; };
 		EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */; };
@@ -30,28 +29,7 @@
 			remoteGlobalIDString = DBA1D7E2F5C619B61CE53BA6;
 			remoteInfo = ProxyMac;
 		};
-		FE4F27336E233232285599CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61293937E80773A8A5FEF4A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6D7A6DBDD2ACD14FF4A889E;
-			remoteInfo = ProxyMacExtension;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A43A90ECF52D049D32B05E9D /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				667390C0286B25C8ABB1DC48 /* ProxyMacExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B6B994A904550B55DA2779B /* ProxyMacHelper */ = {isa = PBXFileReference; includeInIndex = 0; path = ProxyMacHelper; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,12 +205,10 @@
 			buildConfigurationList = 6E3DA1EE3C31B601ED4A31EB /* Build configuration list for PBXNativeTarget "ProxyMac" */;
 			buildPhases = (
 				BA2B45A223C16ECE46DBBF70 /* Sources */,
-				A43A90ECF52D049D32B05E9D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FA9791E1A3BFD0826285269 /* PBXTargetDependency */,
 			);
 			name = ProxyMac;
 			packageProductDependencies = (
@@ -251,19 +227,19 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					45756D2D778B7647363246DC = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = RRN8SGR6F8;
 						ProvisioningStyle = Automatic;
 					};
 					48D0037B19C58EDEADC8807F = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = RRN8SGR6F8;
 						ProvisioningStyle = Automatic;
 					};
 					B6D7A6DBDD2ACD14FF4A889E = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = RRN8SGR6F8;
 						ProvisioningStyle = Automatic;
 					};
 					DBA1D7E2F5C619B61CE53BA6 = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = RRN8SGR6F8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -334,11 +310,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9FA9791E1A3BFD0826285269 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B6D7A6DBDD2ACD14FF4A889E /* ProxyMacExtension */;
-			targetProxy = FE4F27336E233232285599CE /* PBXContainerItemProxy */;
-		};
 		C9779E2F060C323390F3ED56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DBA1D7E2F5C619B61CE53BA6 /* ProxyMac */;
@@ -412,7 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RRN8SGR6F8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -477,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RRN8SGR6F8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -517,6 +488,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -549,6 +521,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

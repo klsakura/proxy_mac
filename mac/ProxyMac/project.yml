@@ -5,7 +5,7 @@ settings:
   base:
     MACOSX_DEPLOYMENT_TARGET: "14.0"
     SWIFT_VERSION: "5.9"
-    DEVELOPMENT_TEAM: ""
+    DEVELOPMENT_TEAM: "RRN8SGR6F8"
     CODE_SIGN_STYLE: "Automatic"
 
 schemes:
@@ -29,9 +29,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.klsakura.ProxyMac
         INFOPLIST_FILE: ProxyMac/Info.plist
         CODE_SIGN_ENTITLEMENTS: ProxyMac/ProxyMac.entitlements
-    dependencies:
-      - target: ProxyMacExtension
-        embed: true
+    dependencies: []
 
   ProxyMacExtension:
     type: app-extension
@@ -61,3 +59,6 @@ targets:
       - path: ProxyMacTests
     dependencies:
       - target: ProxyMac
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES

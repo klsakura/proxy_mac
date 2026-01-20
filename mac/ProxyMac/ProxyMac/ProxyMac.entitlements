@@ -8,9 +8,5 @@
   <true/>
   <key>com.apple.security.network.server</key>
   <true/>
-  <key>com.apple.developer.networking.networkextension</key>
-  <array>
-    <string>transparent-proxy</string>
-  </array>
 </dict>
 </plist>
