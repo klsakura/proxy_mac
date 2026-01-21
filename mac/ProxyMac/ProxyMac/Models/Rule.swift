@@ -10,6 +10,7 @@ final class Rule: Codable {
     var enabled: Bool = true
     var note: String?
     var order: Int = 0
+    var priority: Int = 0
 
     init(
         host: String,
@@ -17,7 +18,8 @@ final class Rule: Codable {
         upstream: String,
         enabled: Bool = true,
         note: String? = nil,
-        order: Int = 0
+        order: Int = 0,
+        priority: Int = 0
     ) {
         self.host = host
         self.pathPrefix = pathPrefix
@@ -25,6 +27,7 @@ final class Rule: Codable {
         self.enabled = enabled
         self.note = note
         self.order = order
+        self.priority = priority
     }
 
     enum CodingKeys: String, CodingKey {
@@ -34,6 +37,7 @@ final class Rule: Codable {
         case enabled
         case note
         case order
+        case priority
     }
 
     required convenience init(from decoder: Decoder) throws {
@@ -44,7 +48,16 @@ final class Rule: Codable {
         let enabled = try container.decodeIfPresent(Bool.self, forKey: .enabled) ?? true
         let note = try container.decodeIfPresent(String.self, forKey: .note)
         let order = try container.decodeIfPresent(Int.self, forKey: .order) ?? 0
-        self.init(host: host, pathPrefix: pathPrefix, upstream: upstream, enabled: enabled, note: note, order: order)
+        let priority = try container.decodeIfPresent(Int.self, forKey: .priority) ?? 0
+        self.init(
+            host: host,
+            pathPrefix: pathPrefix,
+            upstream: upstream,
+            enabled: enabled,
+            note: note,
+            order: order,
+            priority: priority
+        )
     }
 
     func encode(to encoder: Encoder) throws {
@@ -55,5 +68,6 @@ final class Rule: Codable {
         try container.encode(enabled, forKey: .enabled)
         try container.encodeIfPresent(note, forKey: .note)
         try container.encode(order, forKey: .order)
+        try container.encode(priority, forKey: .priority)
     }
 }

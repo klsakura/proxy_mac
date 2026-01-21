@@ -23,4 +23,20 @@ final class ImportExportTests: XCTestCase {
         XCTAssertEqual(decoded[0].note, "note")
         XCTAssertEqual(decoded[0].order, 42)
     }
+
+    func testExportImportIncludesPriority() throws {
+        let rule = Rule(
+            host: "api.dev.test",
+            pathPrefix: "/",
+            upstream: "http://localhost",
+            enabled: true,
+            note: nil,
+            order: 0,
+            priority: 7
+        )
+
+        let data = try RuleJSON.export([rule])
+        let decoded = try RuleJSON.importRules(data)
+        XCTAssertEqual(decoded.first?.priority, 7)
+    }
 }

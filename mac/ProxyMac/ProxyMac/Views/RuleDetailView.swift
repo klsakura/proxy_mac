@@ -9,6 +9,7 @@ struct RuleDetailView: View {
             TextField("Host", text: $rule.host)
             TextField("Path Prefix", text: $rule.pathPrefix)
             TextField("Upstream", text: $rule.upstream)
+            TextField("Priority", value: $rule.priority, formatter: numberFormatter)
             Toggle("Enabled", isOn: $rule.enabled)
             TextEditor(text: Binding(
                 get: { rule.note ?? "" },
@@ -17,5 +18,11 @@ struct RuleDetailView: View {
                 .frame(minHeight: 120)
         }
         .padding()
+    }
+
+    private var numberFormatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.allowsFloats = false
+        return formatter
     }
 }
