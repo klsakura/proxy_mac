@@ -7,6 +7,25 @@ final class ControlClient {
         self.baseURL = baseURL
     }
 
+    func health() async throws {
+        let url = baseURL.appendingPathComponent("health")
+        let (_, response) = try await URLSession.shared.data(from: url)
+        guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
+            throw NSError(domain: "ControlClient", code: (response as? HTTPURLResponse)?.statusCode ?? -1)
+        }
+    }
+
+    func applyConfig(_ data: Data) async throws {
+        var request = URLRequest(url: baseURL.appendingPathComponent("config"))
+        request.httpMethod = "POST"
+        request.httpBody = data
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
+            throw NSError(domain: "ControlClient", code: (response as? HTTPURLResponse)?.statusCode ?? -1)
+        }
+    }
+
     func health(completion: @escaping (Result<Void, Error>) -> Void) {
         let url = baseURL.appendingPathComponent("health")
         let task = URLSession.shared.dataTask(with: url) { _, response, error in
