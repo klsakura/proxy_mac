@@ -5,11 +5,14 @@ import SwiftUI
 struct RulesSplitView: View {
     @AppStorage("rules.sortMode") private var sortMode = "auto"
     @Environment(\.modelContext) private var context
+    @EnvironmentObject private var settings: ProxySettings
+    @EnvironmentObject private var controller: ProxyCoreController
     @Query(sort: \Rule.order) private var rules: [Rule]
     @State private var selectionID: PersistentIdentifier?
     @State private var showingImporter = false
     @State private var showingExporter = false
     @State private var exportData = Data()
+    @State private var showingSettings = false
 
     private var displayRules: [Rule] {
         sortMode == "manual" ? RuleSorting.manualSort(rules) : RuleSorting.autoSort(rules)
@@ -40,6 +43,11 @@ struct RulesSplitView: View {
         }
         .toolbar {
             ToolbarItemGroup {
+                Button(ProxyCoreActions.startStopTitle(for: controller.state)) {
+                    ProxyCoreActions.toggle(controller: controller, settings: settings)
+                }
+                Button("Settings") { showingSettings = true }
+                Divider()
                 Button("Add") { addRule() }
                 Button("Delete") { deleteRule() }
                 Divider()
@@ -67,6 +75,20 @@ struct RulesSplitView: View {
             contentType: .json,
             defaultFilename: "proxy-rules"
         ) { _ in }
+        .sheet(isPresented: $showingSettings) {
+            ProxySettingsView(settings: settings)
+        }
+        .onAppear {
+            controller.updateControlAddress(settings.controlAddress)
+            applyConfig()
+        }
+        .onChange(of: rulesSignature) { _ in
+            applyConfig()
+        }
+        .onChange(of: settings.snapshot) { _ in
+            controller.updateControlAddress(settings.controlAddress)
+            applyConfig()
+        }
     }
 
     private func addRule() {
@@ -111,5 +133,16 @@ struct RulesSplitView: View {
     private var selectedRule: Rule? {
         guard let selectionID else { return nil }
         return rules.first { $0.persistentModelID == selectionID }
+    }
+
+    private var rulesSignature: String {
+        rules.map {
+            "\($0.host)|\($0.pathPrefix)|\($0.upstream)|\($0.enabled)|\($0.order)|\($0.priority)|\($0.note ?? "")"
+        }
+        .joined(separator: ";")
+    }
+
+    private func applyConfig() {
+        Task { await ProxyCoreActions.applyConfig(rules: rules, settings: settings, controller: controller) }
     }
 }

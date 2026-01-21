@@ -15,6 +15,7 @@
 		A5670B2C16BB46C1BBCE7353 /* ProxySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B926CA3767495ABB39C1A6 /* ProxySettings.swift */; };
 		2269BE6FD9C640869271CF7C /* ProxyConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C4F955EB0A4CF8B3889BFA /* ProxyConfigBuilder.swift */; };
 		413B4C4A0160455C872B8E2D /* ProxyCoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA877E95D437B9419500B /* ProxyCoreController.swift */; };
+		7C6C91F3B65E42D1B2E7A6A9 /* ProxyCoreActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F3A0B08B4E34A6E0C52F /* ProxyCoreActions.swift */; };
 		56CB0547E802AA86990DB219 /* RuleSortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */; };
 		C5BA175FF9894590B8956444 /* ProxySettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB1520EE546E5AF200AE9 /* ProxySettingsTests.swift */; };
 		96E4283AEC674A4A9A1882F3 /* ProxyConfigBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB3A53D2C241958E2AD41E /* ProxyConfigBuilderTests.swift */; };
@@ -25,6 +26,8 @@
 		86A48C44FD089BFC1852F4AF /* RulesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815FEB9A5196F5B426A02631 /* RulesViewTests.swift */; };
 		92AC99F8DEA266CE85F0DCB6 /* RuleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063B3584FD7F6AF2CF5F1E4F /* RuleRowView.swift */; };
 		9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52F737709EB91262B6E7C28 /* MainWindow.swift */; };
+		9F4D2D30B1A64B1A8F6D6C53 /* ProxyCoreActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3C2A5D3B94F7EA1C2B5C1 /* ProxyCoreActionsTests.swift */; };
+		CB851D3EB21243D1A603011A /* ProxySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68050FEEA45343D1BFA3E46D /* ProxySettingsView.swift */; };
 		DE4F91CBBC35CFA96CFFA15E /* ImportExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E0CDA29F84AC25EF3F137 /* ImportExport.swift */; };
 		EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */; };
 		EE8D53567E9BEDDFDEE0B1F3 /* TransparentProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883E9807FF33955A53AA91C /* TransparentProxyProvider.swift */; };
@@ -58,9 +61,12 @@
 		79B926CA3767495ABB39C1A6 /* ProxySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySettings.swift; sourceTree = "<group>"; };
 		62C4F955EB0A4CF8B3889BFA /* ProxyConfigBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfigBuilder.swift; sourceTree = "<group>"; };
 		2D7AA877E95D437B9419500B /* ProxyCoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCoreController.swift; sourceTree = "<group>"; };
+		D2C8F3A0B08B4E34A6E0C52F /* ProxyCoreActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCoreActions.swift; sourceTree = "<group>"; };
 		40812292AF07A750247644F4 /* RulesSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesSplitView.swift; sourceTree = "<group>"; };
 		4DE373EB4F395DDFBCDF2272 /* RuleSortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSortingTests.swift; sourceTree = "<group>"; };
 		485DB1520EE546E5AF200AE9 /* ProxySettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySettingsTests.swift; sourceTree = "<group>"; };
+		68050FEEA45343D1BFA3E46D /* ProxySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySettingsView.swift; sourceTree = "<group>"; };
+		A5E3C2A5D3B94F7EA1C2B5C1 /* ProxyCoreActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCoreActionsTests.swift; sourceTree = "<group>"; };
 		9ACB3A53D2C241958E2AD41E /* ProxyConfigBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfigBuilderTests.swift; sourceTree = "<group>"; };
 		2149F97334A14183B65F2F4B /* ProxyCoreControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCoreControllerTests.swift; sourceTree = "<group>"; };
 		6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTests.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				8DB71ABCC747395AABA8B814 /* ImportExportTests.swift */,
 				6D55D93B00E25E911DDF62E4 /* MenuBarTests.swift */,
+				A5E3C2A5D3B94F7EA1C2B5C1 /* ProxyCoreActionsTests.swift */,
 				9ACB3A53D2C241958E2AD41E /* ProxyConfigBuilderTests.swift */,
 				2149F97334A14183B65F2F4B /* ProxyCoreControllerTests.swift */,
 				485DB1520EE546E5AF200AE9 /* ProxySettingsTests.swift */,
@@ -144,6 +151,7 @@
 				364022AA7CA2B765CB6DD3A9 /* JSONFileDocument.swift */,
 				62C4F955EB0A4CF8B3889BFA /* ProxyConfigBuilder.swift */,
 				2D7AA877E95D437B9419500B /* ProxyCoreController.swift */,
+				D2C8F3A0B08B4E34A6E0C52F /* ProxyCoreActions.swift */,
 				79B926CA3767495ABB39C1A6 /* ProxySettings.swift */,
 			);
 			path = Services;
@@ -164,6 +172,7 @@
 			children = (
 				E52F737709EB91262B6E7C28 /* MainWindow.swift */,
 				25E4C82F408C928D0AF160D8 /* MenuBar.swift */,
+				68050FEEA45343D1BFA3E46D /* ProxySettingsView.swift */,
 				9D1A84AA6A0988D6F4BDCD57 /* RuleDetailView.swift */,
 				063B3584FD7F6AF2CF5F1E4F /* RuleRowView.swift */,
 				40812292AF07A750247644F4 /* RulesSplitView.swift */,
@@ -244,6 +253,7 @@
 			buildConfigurationList = 6E3DA1EE3C31B601ED4A31EB /* Build configuration list for PBXNativeTarget "ProxyMac" */;
 			buildPhases = (
 				BA2B45A223C16ECE46DBBF70 /* Sources */,
+				70399358D5FB461F8FFA86C2 /* Build ProxyCore */,
 			);
 			buildRules = (
 			);
@@ -305,6 +315,24 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70399358D5FB461F8FFA86C2 /* Build ProxyCore */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build ProxyCore";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/proxycore",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\nROOT=\"${SRCROOT}/../..\"\nGO_BIN=\"/opt/homebrew/opt/go@1.24/bin/go\"\nif [ ! -x \"$GO_BIN\" ]; then\n  GO_BIN=\"$(command -v go)\"\nfi\nif [ -z \"$GO_BIN\" ]; then\n  echo \"Go not found\" >&2\n  exit 1\nfi\ncd \"$ROOT\"\n\"$GO_BIN\" build -o \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/proxycore\" ./cmd/proxycore\nchmod +x \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/proxycore\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F9AFA31CBBF9BCB71AB532C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -323,9 +351,11 @@
 				FD822C6446565E6A5C9DE994 /* JSONFileDocument.swift in Sources */,
 				2269BE6FD9C640869271CF7C /* ProxyConfigBuilder.swift in Sources */,
 				413B4C4A0160455C872B8E2D /* ProxyCoreController.swift in Sources */,
+				7C6C91F3B65E42D1B2E7A6A9 /* ProxyCoreActions.swift in Sources */,
 				A5670B2C16BB46C1BBCE7353 /* ProxySettings.swift in Sources */,
 				9C6C215A9EF6C5A87855DEBF /* MainWindow.swift in Sources */,
 				F5E123B4D6DCE96F4439C518 /* MenuBar.swift in Sources */,
+				CB851D3EB21243D1A603011A /* ProxySettingsView.swift in Sources */,
 				2E973A97821ED37874DBED99 /* ProxyMacApp.swift in Sources */,
 				110D16FB50E7A1123935F780 /* Rule.swift in Sources */,
 				78D5C7F3EA0509E7751081C1 /* RuleDetailView.swift in Sources */,
@@ -350,6 +380,7 @@
 			files = (
 				FDFF78DBC84E226804E5FE1A /* ImportExportTests.swift in Sources */,
 				EB45C59C41FD4CB13C6304A9 /* MenuBarTests.swift in Sources */,
+				9F4D2D30B1A64B1A8F6D6C53 /* ProxyCoreActionsTests.swift in Sources */,
 				96E4283AEC674A4A9A1882F3 /* ProxyConfigBuilderTests.swift in Sources */,
 				8C0239B76C3641DA85C215FA /* ProxyCoreControllerTests.swift in Sources */,
 				C5BA175FF9894590B8956444 /* ProxySettingsTests.swift in Sources */,

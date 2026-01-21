@@ -5,6 +5,8 @@ import SwiftUI
 @main
 struct ProxyMacApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    @StateObject private var settings = ProxySettings()
+    @StateObject private var controller = ProxyCoreController()
     private let modelContainer: ModelContainer = {
         let isTesting = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
         let configuration = ModelConfiguration(isStoredInMemoryOnly: isTesting)
@@ -14,12 +16,16 @@ struct ProxyMacApp: App {
     var body: some Scene {
         WindowGroup {
             MainWindow()
+                .environmentObject(settings)
+                .environmentObject(controller)
         }
         .modelContainer(modelContainer)
 
         if #available(macOS 13.0, *) {
             MenuBarExtra("ProxyMac") {
                 MenuBarView()
+                    .environmentObject(settings)
+                    .environmentObject(controller)
             }
         }
     }

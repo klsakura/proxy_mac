@@ -1,7 +1,7 @@
 import Foundation
 
 @MainActor
-final class ProxyCoreController: ObservableObject {
+final class ProxyCoreController: ObservableObject, ProxyCoreControlling {
     enum State: Equatable {
         case stopped
         case starting
