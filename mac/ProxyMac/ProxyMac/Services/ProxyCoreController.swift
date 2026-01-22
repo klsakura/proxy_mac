@@ -76,6 +76,15 @@ final class ProxyCoreController: ObservableObject, ProxyCoreControlling {
         }
     }
 
+    func healthCheck() async {
+        do {
+            try await controlClient.health()
+            state = .running
+        } catch {
+            state = .failed(error.localizedDescription)
+        }
+    }
+
     private func waitForHealthThenApply() async {
         let maxAttempts = 20
         for _ in 0..<maxAttempts {

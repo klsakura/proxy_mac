@@ -7,6 +7,7 @@ protocol ProxyCoreControlling: AnyObject {
     func stop()
     func updateControlAddress(_ address: String)
     func applyConfig(_ data: Data) async
+    func healthCheck() async
 }
 
 @MainActor
@@ -50,5 +51,9 @@ struct ProxyCoreActions {
         } catch {
             return
         }
+    }
+
+    static func healthCheck(controller: ProxyCoreControlling, settings: ProxySettings) async {
+        await controller.healthCheck()
     }
 }

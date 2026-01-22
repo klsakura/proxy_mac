@@ -59,6 +59,15 @@ final class ProxyCoreActionsTests: XCTestCase {
         let rules = json?["rules"] as? [[String: Any]]
         XCTAssertEqual(rules?.first?["priority"] as? Int, 2)
     }
+
+    func testHealthCheckCallsController() async {
+        let controller = FakeProxyCoreController(state: .running)
+        let settings = ProxySettings(userDefaults: UserDefaults(suiteName: UUID().uuidString)!)
+
+        await ProxyCoreActions.healthCheck(controller: controller, settings: settings)
+
+        XCTAssertEqual(controller.healthCheckCount, 1)
+    }
 }
 
 @MainActor
@@ -68,6 +77,7 @@ final class FakeProxyCoreController: ProxyCoreControlling {
     private(set) var startAddresses: [String] = []
     private(set) var updateAddresses: [String] = []
     private(set) var lastConfigData: Data?
+    private(set) var healthCheckCount = 0
 
     init(state: ProxyCoreController.State) {
         self.state = state
@@ -87,5 +97,9 @@ final class FakeProxyCoreController: ProxyCoreControlling {
 
     func applyConfig(_ data: Data) async {
         lastConfigData = data
+    }
+
+    func healthCheck() async {
+        healthCheckCount += 1
     }
 }
