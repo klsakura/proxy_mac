@@ -34,12 +34,12 @@ struct RulesSplitView: View {
                 }
             }
         } detail: {
-            if let rule = selectedRule {
-                RuleDetailView(rule: rule)
-            } else {
-                Text("Select a rule")
-                    .foregroundStyle(.secondary)
+            HStack(spacing: 16) {
+                detailContent
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                ProxySidebarView(settings: settings, controller: controller, rules: rules)
             }
+            .padding(.trailing, 12)
         }
         .toolbar {
             ToolbarItemGroup {
@@ -88,6 +88,17 @@ struct RulesSplitView: View {
         .onChange(of: settings.snapshot) { _ in
             controller.updateControlAddress(settings.controlAddress)
             applyConfig()
+        }
+    }
+
+    private var detailContent: some View {
+        Group {
+            if let rule = selectedRule {
+                RuleDetailView(rule: rule)
+            } else {
+                Text("Select a rule")
+                    .foregroundStyle(.secondary)
+            }
         }
     }
 
